@@ -1,15 +1,16 @@
 Recipe Diary
 
 【ページ一覧】
-・トップページ
-・コラム一覧ページ
-・コラム詳細ページ
-・レシピ一覧ページ
-・ジャンル別レシピ一覧ページ
-・レシピ詳細ページ
-・お問い合わせページ
-・プライバシーポリシーページ
-・404ページ
+・トップページ()
+・コラム一覧ページ(column-list.html)
+・カテゴリー別コラム一覧ページ(column-cat-list.html)
+・コラム詳細ページ(column.html)
+・レシピ一覧ページ(recipe-list.html)
+・ジャンル別レシピ一覧ページ(recipe-list.html)
+・レシピ詳細ページ(recipe-cat-list.html)
+・お問い合わせページ(contact.html)
+・プライバシーポリシーページ(privacy-policy.html)
+・404ページ(404.html)
 
 【コラムページ】
 ・通常の投稿で作成

@@ -17,6 +17,9 @@
       a {
         text-transform: capitalize;
         font-size: var(--fz-md);
+        &.current {
+          text-decoration: underline;
+        }
       }
     }
   }

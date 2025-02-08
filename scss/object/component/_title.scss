@@ -29,3 +29,18 @@
   font-weight: bold;
   font-size: var(--fz-lg);
 }
+
+.c-title-404 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(--fz-xl);
+  font-weight: bold;
+  &::before {
+    content: '404';
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+    display: block;
+    color: var(--c-grey);
+    font-size: 128px;
+  }
+}

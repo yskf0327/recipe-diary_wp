@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   /* typography */
   --ff: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
@@ -97,6 +98,21 @@ img {
   font-size: var(--fz-lg);
 }
 
+.c-title-404 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(--fz-xl);
+  font-weight: bold;
+}
+.c-title-404::before {
+  content: "404";
+  letter-spacing: 0.2em;
+  text-indent: 0.2em;
+  display: block;
+  color: var(--c-grey);
+  font-size: 128px;
+}
+
 .c-mv {
   height: 100dvh;
 }
@@ -119,6 +135,7 @@ img {
 .c-button-wrapper {
   display: flex;
   justify-content: center;
+  margin-block: var(--s-lg);
 }
 
 .c-button-nav {
@@ -227,6 +244,9 @@ img {
 .p-nav ul li a {
   text-transform: capitalize;
   font-size: var(--fz-md);
+}
+.p-nav ul li a.current {
+  text-decoration: underline;
 }
 .open .p-nav {
   transform: translateX(-100%);
@@ -422,6 +442,73 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.p-404-wrapper p {
+  text-align: center;
+  margin-block: var(--s-xl);
+}
+
+.p-form {
+  width: min(90%, 45em);
+}
+.p-form a {
+  text-decoration: underline;
+  color: var(--c-link);
+}
+.p-form p {
+  margin-block: var(--s-lg);
+  text-align: center;
+}
+.p-form form {
+  margin-inline: auto;
+}
+.p-form input[type=text],
+.p-form input[type=email],
+.p-form input[type=tel],
+.p-form textarea {
+  border: 1px solid var(--c-text);
+  border-radius: 8px;
+  padding: 0.5em;
+}
+.p-form textarea {
+  resize: none;
+  height: 150px;
+}
+.p-form .p-form-label {
+  text-align: left;
+  margin: 0;
+  font-size: 1.1em;
+}
+.p-form .p-form-label + * {
+  margin-block-start: var(--s-xs);
+}
+.p-form input[type=radio] + label,
+.p-form input[type=checkbox] + label {
+  margin-inline-start: 0.2em;
+  margin-inline-end: 1em;
+}
+
+.p-form-group {
+  display: flex;
+  flex-direction: column;
+}
+.p-form-group + .p-form-group {
+  margin-block-start: var(--s-md);
+}
+.p-form-group + .c-button-wrapper {
+  margin-block-start: var(--s-md);
+}
+.p-form-group:has([required]) label::after {
+  content: "[必須]";
+  color: #8b0000;
+  font-size: 0.8em;
+  margin-inline-start: var(--s-xs);
+  vertical-align: middle;
+}
+
+.p-form-group-inner {
+  display: flex;
 }
 
 .u-sr-only {

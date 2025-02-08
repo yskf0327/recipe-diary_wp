@@ -16,7 +16,7 @@
             <li><a href="./index.html#about">about</a></li>
             <li><a href="./recipe-list.html">recipe</a></li>
             <li><a href="./column-list.html">column</a></li>
-            <li><a href="./contact.html">contact</a></li>
+            <li><a class="current" href="./contact.html">contact</a></li>
           </ul>
         </nav>
         <button type="button" class="c-button-nav">
@@ -25,11 +25,43 @@
       </div>
     </header>
     <main class="l-main">
-      <div class="l-container">
+      <div class="l-container p-form">
         <h1 class="c-title02">contact</h1>
-        <p>お問い合わせは以下のフォームよりお願いいたします。</p>
+        <p>
+          お問い合わせは以下のフォームよりお願いいたします。<br />
+          <a href="./privacy-policy.html">当サイトのプライバシーポリシー</a>
+        </p>
         <form action="#" class="p-form">
-          
+          <div class="p-form-group">
+            <label class="p-form-label" for="user-name">お名前</label>
+            <input type="text" name="user-name" id="user-name" required />
+          </div>
+          <div class="p-form-group">
+            <label class="p-form-label" for="user-email">メールアドレス</label>
+            <input type="email" name="user-email" id="user-email" required />
+          </div>
+          <div class="p-form-group">
+            <label class="p-form-label" for="user-tel">tel</label>
+            <input type="tel" name="user-tel" id="user-tel" />
+          </div>
+          <div class="p-form-group p-form-radio">
+            <p class="p-form-label">お問い合わせの種類</p>
+            <div class="p-form-group-inner">
+              <input type="radio" name="kind" id="kind1" value="0" checked />
+              <label for="kind1">メディア出演</label>
+              <input type="radio" name="kind" id="kind2" value="1" />
+              <label for="kind2">執筆・寄稿</label>
+              <input type="radio" name="kind" id="kind3" value="2" />
+              <label for="kind3">その他</label>
+            </div>
+          </div>
+          <div class="p-form-group">
+            <label class="p-form-label" for="comment">お問い合わせ内容</label>
+            <textarea name="comment" id="comment"></textarea>
+          </div>
+          <div class="c-button-wrapper">
+            <input type="submit" value="送信" class="c-button" />
+          </div>
         </form>
       </div>
     </main>
