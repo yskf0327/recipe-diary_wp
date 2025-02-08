@@ -1,0 +1,36 @@
+:root {
+  /* typography */
+  --ff: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Meiryo', sans-serif;
+  --fz-base: 16px;
+  --fz-sm: 0.875rem;
+  --fz-md: 1.25rem;
+  --fz-lg: 1.75rem;
+  --fz-xl: 2rem;
+
+  /* space */
+  --s-xs: 10px;
+  --s-sm: 20px;
+  --s-md: 40px;
+  --s-lg: 60px;
+  --s-xl: 80px;
+
+  /* color */
+  --c-text: #2b2a27;
+  --c-link: color-mix(in srgb, var(--c-text), #ffffff 30%);
+  --c-grey: #cccccc;
+  --c-white: #ffffff;
+}
+
+html,
+body {
+  scroll-padding-block-start: 90px;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}

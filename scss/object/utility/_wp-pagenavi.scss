@@ -1,0 +1,22 @@
+.wp-pagenavi {
+  margin-block: var(--s-lg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s-xs);
+  & + * {
+    margin-block-start: var(--s-lg);
+  }
+  a,
+  .current {
+    border: 1px solid currentColor;
+    padding-block: 5px;
+    padding-inline: 10px;
+  }
+
+  .current {
+    background-color: var(--c-text);
+    color: var(--c-white);
+  }
+}

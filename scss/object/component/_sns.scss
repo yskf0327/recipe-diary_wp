@@ -1,0 +1,14 @@
+.c-sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s-sm);
+  a {
+    text-decoration: underline;
+    font-size: var(--fz-sm);
+  }
+  & + * {
+    display: block;
+    margin-block-start: var(--s-sm);
+  }
+}

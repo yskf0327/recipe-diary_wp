@@ -1,0 +1,17 @@
+.l-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: var(--s-sm);
+  background-color: var(--c-white);
+  & + *:not(:has(.c-mv)) {
+    margin-block-start: var(--s-lg);
+  }
+}
+
+.l-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

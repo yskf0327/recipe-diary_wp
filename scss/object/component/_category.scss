@@ -1,0 +1,16 @@
+.c-category {
+  margin-block-start: var(--s-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--s-xs);
+  li {
+    border: 1px solid var(--c-text);
+    border-radius: 10px;
+    padding: 3px 10px;
+    color: var(--c-text);
+    a {
+      display: block;
+      font-size: var(--fz-sm);
+    }
+  }
+}

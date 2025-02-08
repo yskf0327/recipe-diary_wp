@@ -1,0 +1,12 @@
+.c-mv {
+  height: 100dvh;
+  img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
+
+  & + * {
+    margin-block-start: var(--s-xl);
+  }
+}
